@@ -19,6 +19,7 @@ if (!defined('DOKU_INC')) die();
 
         <h1><?php
             // get logo either out of the template images folder or data/media folder
+            // Sorry, for this dirty code.
             $logoSize = array();
             $logo = tpl_getMediaFile(array(':wiki:logo.gif', ':wiki:logo.png', ':logo.png', 'images/logo.png'), false, $logoSize);
             $logoSize2 = array();
