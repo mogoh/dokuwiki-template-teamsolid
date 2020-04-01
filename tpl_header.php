@@ -21,11 +21,15 @@ if (!defined('DOKU_INC')) die();
             // get logo either out of the template images folder or data/media folder
             $logoSize = array();
             $logo = tpl_getMediaFile(array(':wiki:logo.png', ':logo.png', 'images/logo.png'), false, $logoSize);
+            $logoSize2 = array();
+            $logo2 = tpl_getMediaFile(array(':wiki:logo2.png', ':logo2.png', 'images/logo2.png'), false, $logoSize);
 
             // display logo and wiki title in a link to the home page
             tpl_link(
                 wl(),
-                '<img src="'.$logo.'" '.$logoSize[3].' alt="" /> <span>'.$conf['title'].'</span>',
+                '<img src="'.$logo.'" '.$logoSize[3].' alt="" />'+
+                '<img src="'.$logo2.'" '.$logoSize2[3].' alt="" />'+
+                '<span>'.$conf['title'].'</span>',
                 'accesskey="h" title="[H]"'
             );
         ?></h1>
