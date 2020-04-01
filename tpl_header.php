@@ -28,7 +28,7 @@ if (!defined('DOKU_INC')) die();
             tpl_link(
                 wl(),
                 '<img src="'.$logo.'" '.$logoSize[3].' alt="'.$conf['title'].'" />'.
-                '<img style="margin-left: -55px;" src="'.$logo2.'" '.$logoSize2[3].' alt="'.$conf['title'].'" />'.
+                '<img style="margin-left: -55px;" src="'.$logo2.'" '.$logoSize2[3].' alt="'.$conf['title'].'" />',
                 'accesskey="h" title="[H]"'
             );
         ?></h1>
